@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="ua">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ElectroCats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style/style.css">
 </head>
+
 <body>
-    <div class="h2">
-        <div class="h1">
-            <div >
-                <br><br><br><br><br><br><br><br><br><br><br><br>
-                <span class="name" >ElectroCats</span>
-            </div>
-            <div >
-                <button id="continue" class="buton_1" onclick="openModalDelayed()">Розпочати гру</button><br>
-                <button class="buton_1">Налаштування</button>
-            </div><br>
-            <button onclick="toggleTheme()" class="tema">Змінити тему</button>
+    <div class="h1">
+        <div >
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <span class="name" >ElectroCats</span>
         </div>
+        <div >
+            <button id="continue" class="buton_1" onclick="openModalDelayed()">Розпочати гру</button><br>
+            <button class="buton_1">Налаштування</button>
+        </div><br>
+        <button onclick="toggleTheme()" class="tema">Змінити тему</button>
     </div>
     <div class="window_akva">
         <!-- Остальне -->
@@ -35,7 +38,7 @@
                 <!-- Вспливашки -->
                 <div id="myModal" class="modal">
                     <div class="modal-content">
-                        
+
                         <H1 style="text-align: center;">НАВЧАННЯ</H1>
                         <div style="display: flex; align-items: center; flex-wrap: wrap;">
                             <div style="flex: 0 0 auto;">
@@ -48,9 +51,9 @@
                                     з-за допомогою «губка», коли той забрудниться.</span>
                             </div>
                             <div style="flex: 0 auto;">
-                                <span style="text-align: right;">Ви завжди можете завітати в «магазин», аби придбати 
+                                <span style="text-align: right;">Ви завжди можете завітати в «магазин», аби придбати
                                     нових рибок, скористатися кнопкою «налаштування» для покращення
-                                ігрового процесу та «вийти з гри» для завершення.</span>
+                                    ігрового процесу та «вийти з гри» для завершення.</span>
                             </div>
                             <div style="flex: 5;">
                                 <img src="image/setting.png" alt="setting" style="width: 150px; height: 150px;">
@@ -59,14 +62,14 @@
                             </div>
                             <div style="flex: 0 auto;">
                                 <span style="text-align: right;">Кредити вказують
-                                     на поточну кількість ваших грошей. Ви можете 
-                                     скористатися ними, щоб придбати нових рибок.</span>
+                                    на поточну кількість ваших грошей. Ви можете
+                                    скористатися ними, щоб придбати нових рибок.</span>
                             </div>
                             <div style="flex: 5;">
                                 <img src="image/kesh.png" alt="kesh" style="width: 150px; height: 150px;">
                             </div>
                         </div>
-                        <button class="close-2" onclick="closeModal()">ОК</button>    
+                        <button class="close-2" onclick="closeModal()">ОК</button>
                     </div>
                 </div>
 
@@ -80,31 +83,31 @@
         <div id="popup" class="popup">
             <div class="popup-content">
                 <div><br>
-                    <span style="margin-left: 48px; font-size: 36px;" ><img src="image/kesh.png" alt="kesh" style="height: 50px; width: 50px;">Кредити:</span> <button class="close" id="closeBtn">&times;</button>
+                    <span style="margin-left: 48px; font-size: 36px;" >Кредити:</span> <button class="close" id="closeBtn">&times;</button>
                 </div>
                 <div class="shop-adres"><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-1.png" alt="fish-1" class="image-shop"><button class="shop-buton-1">6</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-1.png')">Купити Рибку</button><br>
+                    <img src="image/fish-1.png" alt="fish-1" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-1.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-2.png" alt="fish-2" class="image-shop"><button class="shop-buton-1">8</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-2.png')">Купити Рибку</button><br>
+                    <img src="image/fish-2.png" alt="fish-2" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-2.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-3.png" alt="fish-3" class="image-shop"><button class="shop-buton-1">2</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-3.png')">Купити Рибку</button><br>
+                    <img src="image/fish-3.png" alt="fish-3" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-3.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-4.png" alt="fish-4" class="image-shop"><button class="shop-buton-1">10</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-4.png')">Купити Рибку</button><br>
+                    <img src="image/fish-4.png" alt="fish-4" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-4.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-5.png" alt="fish-5" class="image-shop"><button class="shop-buton-1">12</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-5.png')">Купити Рибку</button><br>
+                    <img src="image/fish-5.png" alt="fish-5" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-5.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-6.png" alt="fish-6" class="image-shop"><button class="shop-buton-1">14</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-6.png')">Купити Рибку</button><br>
+                    <img src="image/fish-6.png" alt="fish-6" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-6.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-7.png" alt="fish-7" class="image-shop"><button class="shop-buton-1">16</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-7.png')">Купити Рибку</button><br>
+                    <img src="image/fish-7.png" alt="fish-7" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-7.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-8.png" alt="fish-8" class="image-shop"><button class="shop-buton-1">18</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-8.png')">Купити Рибку</button><br>
+                    <img src="image/fish-8.png" alt="fish-8" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-8.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/kriv-1.png" alt="kriv-1" class="image-shop"><button class="shop-buton-1">15</button><button class="shop-buton-2" onclick="createMovingImage('image/kriv-1.png')">Купити Криветку</button><br>
+                    <img src="image/kriv-1.png" alt="kriv-1" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/kriv-1.png')">Купити Криветку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/kriv-2.png" alt="kriv-2" class="image-shop"><button class="shop-buton-1">20</button><button class="shop-buton-2" onclick="createMovingImage('image/kriv-2.png')">Купити Криветку</button><br>
+                    <img src="image/kriv-2.png" alt="kriv-2" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/kriv-2.png')">Купити Криветку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/ravlik.png" alt="ravlik" class="image-shop"><button class="shop-buton-1">50</button><button class="shop-buton-2" style="margin-bottom: 100px;" onclick="createMovingImage('image/ravlik.png')">Купити Равлика</button>
+                    <img src="image/ravlik.png" alt="ravlik" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" style="margin-bottom: 100px;" onclick="createMovingImage('image/ravlik.png')">Купити Равлика</button>
                     ______________________________________________________________________________________________________________________________
                 </div>
             </div>
@@ -115,22 +118,22 @@
     <script>
         // Тема
         function toggleTheme() {
-                var body = document.body;
-                body.classList.toggle('light-theme');
-                body.classList.toggle('dark-theme');
-            }
+            var body = document.body;
+            body.classList.toggle('light-theme');
+            body.classList.toggle('dark-theme');
+        }
 
         // Вспливашки ___________________________________
         function openModalDelayed() {
-                setTimeout(function () {
-                    document.getElementById("myModal").style.display = "block";
-                }, 3000); 
-            }
+            setTimeout(function () {
+                document.getElementById("myModal").style.display = "block";
+            }, 3000);
+        }
         function openModal() {
-                setTimeout(function () {
-                    document.getElementById("myModal").style.display = "block";
-                }, 1);
-            }
+            setTimeout(function () {
+                document.getElementById("myModal").style.display = "block";
+            }, 1);
+        }
 
         function closeModal() {
             document.getElementById("myModal").style.display = "none";
@@ -141,19 +144,19 @@
 
         var continueBtn = document.getElementById("continue");
             var menuContent = document.querySelector(".window_akva");
-            var electrocatsContent = document.querySelector(".h2");
+            var electrocatsContent = document.querySelector(".h1");
             var toggleBtn = document.getElementById("toggleMenu");
 
-            continueBtn.addEventListener("click", function () {
-                menuContent.classList.toggle("show");
-                electrocatsContent.classList.toggle("hide");
-            });
+        continueBtn.addEventListener("click", function () {
+            menuContent.classList.toggle("show");
+            electrocatsContent.classList.toggle("hide");
+        });
 
-            toggleBtn.addEventListener("click", function () {
-                menuContent.classList.toggle("show");
-                electrocatsContent.classList.toggle("hide");
-            });
-        
+        toggleBtn.addEventListener("click", function () {
+            menuContent.classList.toggle("show");
+            electrocatsContent.classList.toggle("hide");
+        });
+
 
         // Магазин ______________________
 
@@ -161,11 +164,11 @@
         var closeBtn = document.getElementById("closeBtn");
         var popup = document.getElementById("popup");
 
-        
+
         openBtn.addEventListener("click", function () {
             popup.style.display = "block";
         });
-        
+
         closeBtn.addEventListener("click", function () {
             popup.style.display = "none";
         });
@@ -179,16 +182,16 @@
 
         // Рух рибки та відзеркалення
         function getRandomNumber(min, max) {
-                return Math.floor(Math.random() * (max - min + 1) + min);
-            }
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
 
-       function createMovingImage(imageUrl) {
-            
+        function createMovingImage(imageUrl) {
+
             var img = document.createElement('img');
-            img.src = imageUrl; 
+            img.src = imageUrl;
 
             var x = getRandomNumber(0, 1700); 
-            var y = getRandomNumber(0, 700); 
+            var y = getRandomNumber(0, 600); 
 
             img.style.left = x + 'px';
             img.style.top = y + 'px';
@@ -221,46 +224,11 @@
                 } else if (parseInt(img.style.top) > 700) {
                     img.style.top = '700px';
                 }
-            }, 2000); 
+            }, 2000);
         }
 
-        // Бекенд
-        // ID___________________________________________
-        async function createSession() {
-            const response = await fetch('/play/', {
-                method: 'POST'
-            });
-            const data = await response.json();
-
-            // Зберігаємо id сесії у sessionStorage
-            sessionStorage.setItem('sessionId', data.id);
-        }
-        window.onload = createSession;
-
-        // Голод
-        async function checkHunger() {
-             const session_id = sessionStorage.getItem('sessionId'); // Отримуємо session_id із sessionStorage
-            if (session_id) {
-                const response = await fetch(`/get-hungry/${session_id}`);
-                const data = await response.json();
-                document.getElementById('hunger-status').innerText = 'Hungry: ' + data.hungry;
-
-                // Перевіряємо, чи голод досяг 100
-                if (data.hungry >= 100) {
-                    // Отримуємо посилання на елемент <img> за його id
-                    const imgElement = document.getElementById('your-image-id');
-
-                    // Видаляємо <img> з DOM
-                    imgElement.remove();
-                }
-            } else {
-                console.log('Session ID not found in sessionStorage.');
-            }
-        }
-
-        // Викликаємо функцію checkHunger() кожні 10 секунд
-        setInterval(checkHunger, 10000);
 </script>
     
 </body>
+
 </html>
