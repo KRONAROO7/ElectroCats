@@ -1,6 +1,16 @@
 body{
     margin: 0;
 }
+/* __________Тема_____________ */
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-theme {
+    background-color: #222222;
+    color: #ffffff;
+}
 /* __________________Меню_____________________ */
 .hide {
     display: none;
@@ -9,19 +19,21 @@ body{
     background-image: url('');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 5%;
+    margin-top: 0;
     margin-bottom: 0;
     margin-left: 25%;
     margin-right: 25%;
     background-color: rgb(165, 165, 165);
     text-align: center;
-    height: 500px;
+    height: 900px;
 }
 .name{
-    font-size: 78px
+    font-size: 78px;
+    margin-top: 0%;
     
 }
 .buton_1{
+    cursor: pointer;
     border: none;
     border-radius: 10px;
     top: 50%;
@@ -30,6 +42,11 @@ body{
     height: 70px;
     width: 350px;
     font-size: 48px;
+}
+.tema{
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 /* __________________________Магазин______________________________ */
 .popup {
@@ -45,14 +62,71 @@ body{
 }
 
 .popup-content {
+    margin: 0;
+    background-color: rgb(169, 255, 255);
+    margin: 5% auto;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.close {
+    cursor: pointer;
+    margin-right: 15px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.shop-adres{
+
+    text-align: center;
+
+}
+.image-shop{
+    margin-right: 100px;
+    height: 250px;
+    width: 300px;
+}
+.shop-buton-1{
+    width: 250px;
+    height: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.shop-buton-2 {
+    width:200px;
+    height: 50px;
+}
+/* _________________Вспливашки___________________________ */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    max-width: 800px;
 }
 
-.close {
+.close-2 {
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -76,13 +150,66 @@ body{
     margin: 0;
     background-color: #646464;
     width: 100%;
-    height: 85px;
+    height: 150px;
 }
-.buton_2{
-    
+.buton_2-1,
+.buton_2-2,
+.buton_2-3,
+.buton_2-4{
+    width: 125px;
+    height: 125px;
+    margin: 5px;
+    border-radius: 50%;
 }
+ .buton_2-1{
+    margin-left: 15%;
+    background-image: url('../image/shop.png');
+    background-size: cover;
+    cursor: pointer;
+}
+.buton_2-2 {
+    margin-left: 15%;
+    background-image: url('../image/eat.png');
+    background-size: cover;
+    cursor: pointer;
+}
+.buton_2-3 {
+    margin-left: 15%;
+    background-image: url('../image/mitya.png');
+    background-size: cover;
+    cursor: pointer;
+}
+.buton_2-4{
+    margin-left: 15%;
+    background-image: url('../image/setting.png');
+    background-size: cover;
+    cursor: pointer;
+}
+/*
 .akva{
     
+} */
+.button-left-3,
+.button-right-3 {
+    background-size: cover;
+    cursor: pointer;
+    margin: 25px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+.button-left-3 {
+    background-image: url('../image/');
+    left: 0;
+}
+
+.button-right-3 {
+    background-image: url('../image/exit.png');
+
+    right: 0;
 }
 /* ______________________Рибки_______________________ */
 
@@ -94,7 +221,7 @@ body{
 #container {
     position: relative;
     width: 100%;
-    height: 850px;
+    height: 750px;
     border-bottom: 1px solid #000;
     margin: 0;
     overflow: hidden;

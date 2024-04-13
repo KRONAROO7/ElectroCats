@@ -9,59 +9,129 @@
 <body>
     <div class="h1">
         <div >
-            <br><br><br><br>
-            <span class="name">ElectroCats</span>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <span class="name" >ElectroCats</span>
         </div>
         <div >
-            <button id="continue" class="buton_1">Розпочати гру</button><br>
+            <button id="continue" class="buton_1" onclick="openModalDelayed()">Розпочати гру</button><br>
             <button class="buton_1">Налаштування</button>
-        </div>
+        </div><br>
+        <button onclick="toggleTheme()" class="tema">Змінити тему</button>
     </div>
     <div class="window_akva">
+        <!-- Остальне -->
         <div class="menu_akva">
-            <button id="openBtn" class="buton_2">Магазин</button>
-            <span>Кредиити</span>
-            <button>Їжа</button>
-            <button>Митя</button>
-            <button>Налаштування</button>
+            <button id="openBtn" class="buton_2-1"></button>
+            <button class="buton_2-2"></button>
+            <button class="buton_2-3"></button>
+            <button class="buton_2-4"></button>
         </div>
         <div class="akva">
-            
-            <!-- Контейнер для картинок -->
-            <div id="container"> 
-                <button onclick="createMovingImage('image/fish-1.png')">Створити картинку 1</button>
-                <button onclick="createMovingImage('image/fish-2.png')">Створити картинку 2</button>
+
+            <div id="container">
+
+                <!-- Вспливашки -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-2" onclick="closeModal()">&times;</span>
+                        <H1 style="text-align: center;">НАВЧАННЯ</H1>
+                        <div style="display: flex; align-items: center;">
+                            <div style="flex: 0 0 auto;">
+                                <img src="image/eat.png" alt="eat" style="width: 150px; height: 150px;">
+                                <img src="image/mitya.png" alt="mitya" style="width: 150px; height: 150px;">
+                            </div>
+                            <div style="flex: 1;">
+                                <span style="text-align: right;">Ви можете скористатися кнопкою «їжа»,
+                                    аби порадувати мешканців акваріума смачним кормом. Також ви можете вимити акваріум
+                                    з-за допомогою «губка», коли той забрудниться.</span>
+                            </div>
+                            <div>
+                                <img src="image/setting.png" alt="eat" style="width: 150px; height: 150px;">
+                                <img src="image/exit.png" alt="eat" style="width: 150px; height: 150px;">
+                                <img src="image/shop.png" alt="eat" style="width: 150px; height: 150px;">
+                            </div>
+                        </div>
+  
+                    </div>
+                </div>
+
+                <!-- Решта -->
+                <button class="button-left-3">%</button>
+                <button class="button-right-3" id="toggleMenu"></button>
             </div>
 
         </div>
         <!-- Магазин -->
         <div id="popup" class="popup">
             <div class="popup-content">
-                <span class="close" id="closeBtn">&times;</span>
-                <p>Це вспливаюче вікно!</p>
-                <p>Це вспливаюче вікно!</p>
-                <p>Це вспливаюче вікно!</p>
-                <p>Це вспливаюче вікно!</p>
-                <p>Це вспливаюче вікно!</p>
-                <p>Це вспливаюче вікно!</p>
-                <p>Це вспливаюче вікно!</p>
+                <div><br>
+                    <span style="margin-left: 48px; font-size: 36px;" >Кредити:</span> <button class="close" id="closeBtn">&times;</button>
+                </div>
+                <div class="shop-adres"><br>
+                    ______________________________________________________________________________________________________________________________
+                    <img src="image/fish-1.png" alt="fish-1" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-1.png')">Купити Рибку</button><br>
+                    ______________________________________________________________________________________________________________________________
+                    <img src="image/fish-2.png" alt="fish-2" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-2.png')">Купити Рибку</button><br>
+                    ______________________________________________________________________________________________________________________________
+                    <img src="image/fish-3.png" alt="fish-3" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-3.png')">Купити Рибку</button><br>
+                    ______________________________________________________________________________________________________________________________
+                    <img src="image/fish-4.png" alt="fish-4" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-4.png')">Купити Рибку</button><br>
+                    ______________________________________________________________________________________________________________________________
+                    <img src="image/fish-5.png" alt="fish-5" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-5.png')">Купити Рибку</button><br>
+                    ______________________________________________________________________________________________________________________________
+                    <img src="image/fish-6.png" alt="fish-6" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-6.png')">Купити Рибку</button><br>
+                    ______________________________________________________________________________________________________________________________
+                    <img src="image/fish-7.png" alt="fish-7" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-7.png')">Купити Рибку</button><br>
+                    ______________________________________________________________________________________________________________________________
+                    <img src="image/fish-8.png" alt="fish-8" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-8.png')">Купити Рибку</button><br>
+                    ______________________________________________________________________________________________________________________________
+                    <img src="image/kriv-1.png" alt="kriv-1" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/kriv-1.png')">Купити Криветку</button><br>
+                    ______________________________________________________________________________________________________________________________
+                    <img src="image/kriv-2.png" alt="kriv-2" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/kriv-2.png')">Купити Криветку</button><br>
+                    ______________________________________________________________________________________________________________________________
+                    <img src="image/ravlik.png" alt="ravlik" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" style="margin-bottom: 100px;" onclick="createMovingImage('image/ravlik.png')">Купити Равлика</button>
+                    ______________________________________________________________________________________________________________________________
+                </div>
             </div>
         </div>
 
     </div>
 
     <script>
+        // Тема
+        function toggleTheme() {
+                var body = document.body;
+                body.classList.toggle('light-theme');
+                body.classList.toggle('dark-theme');
+            }
+
+        // Вспливашки ___________________________________
+        function openModalDelayed() {
+                setTimeout(function () {
+                    document.getElementById("myModal").style.display = "block";
+                }, 5); // Затримка в 5000 мілісекунд (5 секунд)
+            }
+
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
 
         // Меню ___________________________
 
         var continueBtn = document.getElementById("continue");
-        var menuContent = document.querySelector(".window_akva");
-        var electrocatsContent = document.querySelector(".h1");
+            var menuContent = document.querySelector(".window_akva");
+            var electrocatsContent = document.querySelector(".h1");
+            var toggleBtn = document.getElementById("toggleMenu");
 
-        continueBtn.addEventListener("click", function () {
-            menuContent.classList.toggle("show");
-            electrocatsContent.classList.toggle("hide"); 
-        });
+            continueBtn.addEventListener("click", function () {
+                menuContent.classList.toggle("show");
+                electrocatsContent.classList.toggle("hide");
+            });
+
+            toggleBtn.addEventListener("click", function () {
+                menuContent.classList.toggle("show");
+                electrocatsContent.classList.toggle("hide");
+            });
         
 
         // Магазин ______________________
@@ -127,8 +197,8 @@
 
                 if (parseInt(img.style.top) < 0) {
                     img.style.top = '0px';
-                } else if (parseInt(img.style.top) > 500) {
-                    img.style.top = '500px';
+                } else if (parseInt(img.style.top) > 600) {
+                    img.style.top = '600px';
                 }
             }, 2000); 
         }
