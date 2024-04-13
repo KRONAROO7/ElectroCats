@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="Style/style.css">
 </head>
 <body>
-    <div class="h1">
-        <div >
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-            <span class="name" >ElectroCats</span>
+    <div class="h2">
+        <div class="h1">
+            <div >
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <span class="name" >ElectroCats</span>
+            </div>
+            <div >
+                <button id="continue" class="buton_1" onclick="openModalDelayed()">Розпочати гру</button><br>
+                <button class="buton_1">Налаштування</button>
+            </div><br>
+            <button onclick="toggleTheme()" class="tema">Змінити тему</button>
         </div>
-        <div >
-            <button id="continue" class="buton_1" onclick="openModalDelayed()">Розпочати гру</button><br>
-            <button class="buton_1">Налаштування</button>
-        </div><br>
-        <button onclick="toggleTheme()" class="tema">Змінити тему</button>
     </div>
     <div class="window_akva">
         <!-- Остальне -->
@@ -78,31 +80,31 @@
         <div id="popup" class="popup">
             <div class="popup-content">
                 <div><br>
-                    <span style="margin-left: 48px; font-size: 36px;" >Кредити:</span> <button class="close" id="closeBtn">&times;</button>
+                    <span style="margin-left: 48px; font-size: 36px;" ><img src="image/kesh.png" alt="kesh" style="height: 50px; width: 50px;">Кредити:</span> <button class="close" id="closeBtn">&times;</button>
                 </div>
                 <div class="shop-adres"><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-1.png" alt="fish-1" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-1.png')">Купити Рибку</button><br>
+                    <img src="image/fish-1.png" alt="fish-1" class="image-shop"><button class="shop-buton-1">6</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-1.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-2.png" alt="fish-2" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-2.png')">Купити Рибку</button><br>
+                    <img src="image/fish-2.png" alt="fish-2" class="image-shop"><button class="shop-buton-1">8</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-2.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-3.png" alt="fish-3" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-3.png')">Купити Рибку</button><br>
+                    <img src="image/fish-3.png" alt="fish-3" class="image-shop"><button class="shop-buton-1">2</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-3.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-4.png" alt="fish-4" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-4.png')">Купити Рибку</button><br>
+                    <img src="image/fish-4.png" alt="fish-4" class="image-shop"><button class="shop-buton-1">10</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-4.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-5.png" alt="fish-5" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-5.png')">Купити Рибку</button><br>
+                    <img src="image/fish-5.png" alt="fish-5" class="image-shop"><button class="shop-buton-1">12</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-5.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-6.png" alt="fish-6" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-6.png')">Купити Рибку</button><br>
+                    <img src="image/fish-6.png" alt="fish-6" class="image-shop"><button class="shop-buton-1">14</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-6.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-7.png" alt="fish-7" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-7.png')">Купити Рибку</button><br>
+                    <img src="image/fish-7.png" alt="fish-7" class="image-shop"><button class="shop-buton-1">16</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-7.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-8.png" alt="fish-8" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-8.png')">Купити Рибку</button><br>
+                    <img src="image/fish-8.png" alt="fish-8" class="image-shop"><button class="shop-buton-1">18</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-8.png')">Купити Рибку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/kriv-1.png" alt="kriv-1" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/kriv-1.png')">Купити Криветку</button><br>
+                    <img src="image/kriv-1.png" alt="kriv-1" class="image-shop"><button class="shop-buton-1">15</button><button class="shop-buton-2" onclick="createMovingImage('image/kriv-1.png')">Купити Криветку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/kriv-2.png" alt="kriv-2" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/kriv-2.png')">Купити Криветку</button><br>
+                    <img src="image/kriv-2.png" alt="kriv-2" class="image-shop"><button class="shop-buton-1">20</button><button class="shop-buton-2" onclick="createMovingImage('image/kriv-2.png')">Купити Криветку</button><br>
                     ______________________________________________________________________________________________________________________________
-                    <img src="image/ravlik.png" alt="ravlik" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" style="margin-bottom: 100px;" onclick="createMovingImage('image/ravlik.png')">Купити Равлика</button>
+                    <img src="image/ravlik.png" alt="ravlik" class="image-shop"><button class="shop-buton-1">50</button><button class="shop-buton-2" style="margin-bottom: 100px;" onclick="createMovingImage('image/ravlik.png')">Купити Равлика</button>
                     ______________________________________________________________________________________________________________________________
                 </div>
             </div>
@@ -139,7 +141,7 @@
 
         var continueBtn = document.getElementById("continue");
             var menuContent = document.querySelector(".window_akva");
-            var electrocatsContent = document.querySelector(".h1");
+            var electrocatsContent = document.querySelector(".h2");
             var toggleBtn = document.getElementById("toggleMenu");
 
             continueBtn.addEventListener("click", function () {
@@ -186,7 +188,7 @@
             img.src = imageUrl; 
 
             var x = getRandomNumber(0, 1700); 
-            var y = getRandomNumber(0, 600); 
+            var y = getRandomNumber(0, 700); 
 
             img.style.left = x + 'px';
             img.style.top = y + 'px';
@@ -216,12 +218,48 @@
 
                 if (parseInt(img.style.top) < 0) {
                     img.style.top = '0px';
-                } else if (parseInt(img.style.top) > 600) {
-                    img.style.top = '600px';
+                } else if (parseInt(img.style.top) > 700) {
+                    img.style.top = '700px';
                 }
             }, 2000); 
         }
 
+        // Бекенд
+        // ID___________________________________________
+        async function createSession() {
+            const response = await fetch('/play/', {
+                method: 'POST'
+            });
+            const data = await response.json();
+
+            // Зберігаємо id сесії у sessionStorage
+            sessionStorage.setItem('sessionId', data.id);
+        }
+        window.onload = createSession;
+
+        // Голод
+        async function checkHunger() {
+             const session_id = sessionStorage.getItem('sessionId'); // Отримуємо session_id із sessionStorage
+            if (session_id) {
+                const response = await fetch(`/get-hungry/${session_id}`);
+                const data = await response.json();
+                document.getElementById('hunger-status').innerText = 'Hungry: ' + data.hungry;
+
+                // Перевіряємо, чи голод досяг 100
+                if (data.hungry >= 100) {
+                    // Отримуємо посилання на елемент <img> за його id
+                    const imgElement = document.getElementById('your-image-id');
+
+                    // Видаляємо <img> з DOM
+                    imgElement.remove();
+                }
+            } else {
+                console.log('Session ID not found in sessionStorage.');
+            }
+        }
+
+        // Викликаємо функцію checkHunger() кожні 10 секунд
+        setInterval(checkHunger, 10000);
 </script>
     
 </body>
