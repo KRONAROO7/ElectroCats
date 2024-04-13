@@ -45,241 +45,240 @@ body {
 
 }
 
-<<<<<<< HEAD .buton_1 {
-    =======.buton_1 {
-        font-family: "Caveat", cursive;
-        font-optical-sizing: auto;
-        >>>>>>>f786385 (All) cursor: pointer;
-        border: none;
-        border-radius: 10px;
-        top: 50%;
-        background-color: #c7c7fc;
-        margin-top: 50px;
-        height: 70px;
-        width: 350px;
-        font-size: 48px;
-    }
+.buton_1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    top: 50%;
+    background-color: #c7c7fc;
+    margin-top: 50px;
+    height: 70px;
+    width: 350px;
+    font-size: 48px;
+}
 
-    .tema {
-        width: 100px;
-        border-radius: 10px;
-        cursor: pointer;
-    }
+.tema {
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
-    /* __________________________Магазин______________________________ */
-    .popup {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
+/* __________________________Магазин______________________________ */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-    .popup-content {
-        margin: 0;
-        background-color: rgb(169, 255, 255);
-        margin: 5% auto;
-        border: 1px solid #888;
-        width: 60%;
-    }
+.popup-content {
+    margin: 0;
+    background-color: rgb(169, 255, 255);
+    margin: 5% auto;
+    border: 1px solid #888;
+    width: 60%;
+}
 
-    .close {
-        cursor: pointer;
-        margin-right: 15px;
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
+.close {
+    cursor: pointer;
+    margin-right: 15px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
 
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-    .shop-adres {
+.shop-adres {
 
-        text-align: center;
+    text-align: center;
 
-    }
+}
 
-    .image-shop {
-        margin-right: 100px;
-        height: 250px;
-        width: 300px;
-    }
+.image-shop {
+    margin-right: 100px;
+    height: 250px;
+    width: 300px;
+}
 
-    .shop-buton-1 {
-        width: 250px;
-        height: 50px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+.shop-buton-1 {
+    width: 250px;
+    height: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
-    .shop-buton-2 {
-        width: 200px;
-        height: 50px;
-    }
+.shop-buton-2 {
+    width: 200px;
+    height: 50px;
+}
 
-    /* _________________Вспливашки___________________________ */
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
+/* _________________Вспливашки___________________________ */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-    .modal-content {
-        background-color: #fefefe;
-        margin: 5% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        max-width: 800px;
-    }
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+}
 
-    .close-2 {
-        color: #aaa;
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
-    }
+.close-2 {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-    .container-22 {
-        display: flex;
-        flex-wrap: wrap;
-    }
+.container-22 {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    .flex-row {
-        flex: 0 0 100%;
-        display: flex;
-    }
+.flex-row {
+    flex: 0 0 100%;
+    display: flex;
+}
 
-    .flex-item {
-        flex: 1;
-        margin: 10px;
-        text-align: right;
-    }
+.flex-item {
+    flex: 1;
+    margin: 10px;
+    text-align: right;
+}
 
-    .flex-item img {
-        width: 150px;
-        height: 150px;
-    }
+.flex-item img {
+    width: 150px;
+    height: 150px;
+}
 
-    /* ________________________Акваріум________________________________ */
-    .window_akva {
-        display: none;
-    }
+/* ________________________Акваріум________________________________ */
+.window_akva {
+    display: none;
+}
 
-    .show {
-        display: block;
-    }
+.show {
+    display: block;
+}
 
-    .menu_akva {
-        margin: 0;
-        background-color: #646464;
-        width: 100%;
-        height: 150px;
-    }
+.menu_akva {
+    margin: 0;
+    background-color: #646464;
+    width: 100%;
+    height: 150px;
+}
 
-    .buton_2-1,
-    .buton_2-2,
-    .buton_2-3,
-    .buton_2-4 {
-        width: 125px;
-        height: 125px;
-        margin: 5px;
-        border-radius: 50%;
-    }
+.buton_2-1,
+.buton_2-2,
+.buton_2-3,
+.buton_2-4 {
+    width: 125px;
+    height: 125px;
+    margin: 5px;
+    border-radius: 50%;
+}
 
-    .buton_2-1 {
-        margin-left: 15%;
-        background-image: url('../image/shop.png');
-        background-size: cover;
-        cursor: pointer;
-    }
+.buton_2-1 {
+    margin-left: 15%;
+    background-image: url('../image/shop.png');
+    background-size: cover;
+    cursor: pointer;
+}
 
-    .buton_2-2 {
-        margin-left: 15%;
-        background-image: url('../image/eat.png');
-        background-size: cover;
-        cursor: pointer;
-    }
+.buton_2-2 {
+    margin-left: 15%;
+    background-image: url('../image/eat.png');
+    background-size: cover;
+    cursor: pointer;
+}
 
-    .buton_2-3 {
-        margin-left: 15%;
-        background-image: url('../image/mitya.png');
-        background-size: cover;
-        cursor: pointer;
-    }
+.buton_2-3 {
+    margin-left: 15%;
+    background-image: url('../image/mitya.png');
+    background-size: cover;
+    cursor: pointer;
+}
 
-    .buton_2-4 {
-        margin-left: 15%;
-        background-image: url('../image/setting.png');
-        background-size: cover;
-        cursor: pointer;
-    }
+.buton_2-4 {
+    margin-left: 15%;
+    background-image: url('../image/setting.png');
+    background-size: cover;
+    cursor: pointer;
+}
 
-    .akva {
-        background-image: url('../image/akva.png');
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
+.akva {
+    background-image: url('../image/akva.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
-    .button-left-3,
-    .button-right-3 {
-        background-size: cover;
-        cursor: pointer;
-        margin: 25px;
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        bottom: 0;
-    }
+.button-left-3,
+.button-right-3 {
+    background-size: cover;
+    cursor: pointer;
+    margin: 25px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
 
-    .button-left-3 {
-        background-image: url('../image/robot.png');
-        left: 0;
-    }
+.button-left-3 {
+    background-image: url('../image/robot.png');
+    left: 0;
+}
 
-    .button-right-3 {
-        background-image: url('../image/exit.png');
+.button-right-3 {
+    background-image: url('../image/exit.png');
 
-        right: 0;
-    }
+    right: 0;
+}
 
-    /* ______________________Рибки_______________________ */
+/* ______________________Рибки_______________________ */
 
-    .moving-image {
-        position: absolute;
-        width: 100px;
-        height: 100px;
-    }
+.moving-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
 
-    #container {
-        position: relative;
-        width: 100%;
-        height: 800px;
-        border-bottom: 1px solid #000;
-        margin: 0;
-        overflow: hidden;
-    }
+#container {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    border-bottom: 1px solid #000;
+    margin: 0;
+    overflow: hidden;
+}
