@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroCats</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <div class="h1">
+        <div >
+            <br><br><br><br>
+            <span class="name">ElectroCats</span>
+        </div>
+        <div >
+            <button id="continue" class="buton_1">Розпочати гру</button><br>
+            <button class="buton_1">Налаштування</button>
+        </div>
+    </div>
+    <div class="window_akva">
+        <div class="menu_akva">
+            <button id="openBtn" class="buton_2">Магазин</button>
+            <span>Кредиити</span>
+            <button>Їжа</button>
+            <button>Митя</button>
+            <button>Налаштування</button>
+        </div>
+        <div class="akva">
+            
+            <!-- Контейнер для картинок -->
+            <div id="container"> 
+                <button onclick="createMovingImage('image/fish-1.png')">Створити картинку 1</button>
+                <button onclick="createMovingImage('image/fish-2.png')">Створити картинку 2</button>
+            </div>
+
+        </div>
+        <!-- Магазин -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" id="closeBtn">&times;</span>
+                <p>Це вспливаюче вікно!</p>
+                <p>Це вспливаюче вікно!</p>
+                <p>Це вспливаюче вікно!</p>
+                <p>Це вспливаюче вікно!</p>
+                <p>Це вспливаюче вікно!</p>
+                <p>Це вспливаюче вікно!</p>
+                <p>Це вспливаюче вікно!</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        // Меню ___________________________
+
+        var continueBtn = document.getElementById("continue");
+        var menuContent = document.querySelector(".window_akva");
+        var electrocatsContent = document.querySelector(".h1");
+
+        continueBtn.addEventListener("click", function () {
+            menuContent.classList.toggle("show");
+            electrocatsContent.classList.toggle("hide"); 
+        });
+        
+
+        // Магазин ______________________
+
+        var openBtn = document.getElementById("openBtn");
+        var closeBtn = document.getElementById("closeBtn");
+        var popup = document.getElementById("popup");
+
+        
+        openBtn.addEventListener("click", function () {
+            popup.style.display = "block";
+        });
+        
+        closeBtn.addEventListener("click", function () {
+            popup.style.display = "none";
+        });
+
+        window.addEventListener("click", function (event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        });
+
+
+        // Рух рибки та відзеркалення
+        function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            }
+
+       function createMovingImage(imageUrl) {
+            
+            var img = document.createElement('img');
+            img.src = imageUrl; 
+
+            var x = getRandomNumber(0, 1700); 
+            var y = getRandomNumber(0, 600); 
+
+            img.style.left = x + 'px';
+            img.style.top = y + 'px';
+
+            img.classList.add('moving-image');
+
+            document.getElementById('container').appendChild(img);
+
+            setInterval(function () {
+                var newX = getRandomNumber(0, 1700);
+                var newY = getRandomNumber(0, 500);
+
+                var direction = newX > parseInt(img.style.left) ? 'right' : 'left';
+
+                img.style.transition = 'transform 0.1s linear';
+                img.style.transform = direction === 'left' ? 'scaleX(-1)' : 'scaleX(1)';
+
+                img.style.transition = 'left 4s, top 4s';
+                img.style.left = newX + 'px';
+                img.style.top = newY + 'px';
+
+                if (parseInt(img.style.left) < 0) {
+                    img.style.left = '0px';
+                } else if (parseInt(img.style.left) > 1700) {
+                    img.style.left = '1700px';
+                }
+
+                if (parseInt(img.style.top) < 0) {
+                    img.style.top = '0px';
+                } else if (parseInt(img.style.top) > 500) {
+                    img.style.top = '500px';
+                }
+            }, 2000); 
+        }
+
+</script>
+    
+</body>
+</html>
