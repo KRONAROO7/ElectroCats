@@ -1,6 +1,8 @@
-body{
-    margin: 0;
+body {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
 }
+
 /* __________Тема_____________ */
 .light-theme {
     background-color: #ffffff;
@@ -11,11 +13,13 @@ body{
     background-color: #222222;
     color: #ffffff;
 }
+
 /* __________________Меню_____________________ */
 .hide {
     display: none;
 }
-.h1{
+
+.h1 {
     background-image: url('');
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,12 +31,14 @@ body{
     text-align: center;
     height: 900px;
 }
-.name{
+
+.name {
     font-size: 78px;
     margin-top: 0%;
-    
+
 }
-.buton_1{
+
+.buton_1 {
     cursor: pointer;
     border: none;
     border-radius: 10px;
@@ -43,11 +49,13 @@ body{
     width: 350px;
     font-size: 48px;
 }
-.tema{
+
+.tema {
     width: 100px;
     border-radius: 10px;
     cursor: pointer;
 }
+
 /* __________________________Магазин______________________________ */
 .popup {
     display: none;
@@ -84,26 +92,31 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
-.shop-adres{
+
+.shop-adres {
 
     text-align: center;
 
 }
-.image-shop{
+
+.image-shop {
     margin-right: 100px;
     height: 250px;
     width: 300px;
 }
-.shop-buton-1{
+
+.shop-buton-1 {
     width: 250px;
     height: 50px;
     margin-left: 5%;
     margin-right: 5%;
 }
+
 .shop-buton-2 {
-    width:200px;
+    width: 200px;
     height: 50px;
 }
+
 /* _________________Вспливашки___________________________ */
 .modal {
     display: none;
@@ -139,6 +152,7 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
+
 .container-22 {
     display: flex;
     flex-wrap: wrap;
@@ -159,52 +173,61 @@ body{
     width: 150px;
     height: 150px;
 }
+
 /* ________________________Акваріум________________________________ */
-.window_akva{
+.window_akva {
     display: none;
 }
+
 .show {
     display: block;
 }
-.menu_akva{
+
+.menu_akva {
     margin: 0;
     background-color: #646464;
     width: 100%;
     height: 150px;
 }
+
 .buton_2-1,
 .buton_2-2,
 .buton_2-3,
-.buton_2-4{
+.buton_2-4 {
     width: 125px;
     height: 125px;
     margin: 5px;
     border-radius: 50%;
 }
- .buton_2-1{
+
+.buton_2-1 {
     margin-left: 15%;
     background-image: url('../image/shop.png');
     background-size: cover;
     cursor: pointer;
 }
+
 .buton_2-2 {
     margin-left: 15%;
     background-image: url('../image/eat.png');
     background-size: cover;
     cursor: pointer;
 }
+
 .buton_2-3 {
     margin-left: 15%;
     background-image: url('../image/mitya.png');
     background-size: cover;
     cursor: pointer;
 }
-.buton_2-4{
+
+.buton_2-4 {
     margin-left: 15%;
     background-image: url('../image/setting.png');
     background-size: cover;
     cursor: pointer;
 }
+
 /*
 .akva{
     
@@ -231,6 +254,7 @@ body{
 
     right: 0;
 }
+
 /* ______________________Рибки_______________________ */
 
 .moving-image {
@@ -238,6 +262,7 @@ body{
     width: 100px;
     height: 100px;
 }
+
 #container {
     position: relative;
     width: 100%;
