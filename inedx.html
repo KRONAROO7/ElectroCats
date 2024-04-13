@@ -12,16 +12,18 @@
 </head>
 
 <body>
-    <div class="h1">
-        <div >
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-            <span class="name" >ElectroCats</span>
+    <div class="h2">
+        <div class="h1">
+            <div >
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <span class="name" >ElectroCats</span>
+            </div>
+            <div >
+                <button id="continue" class="buton_1" onclick="openModalDelayed()">Розпочати гру</button><br>
+                <button class="buton_1">Налаштування</button>
+            </div><br>
+            <button onclick="toggleTheme()" class="tema">Змінити тему</button>
         </div>
-        <div >
-            <button id="continue" class="buton_1" onclick="openModalDelayed()">Розпочати гру</button><br>
-            <button class="buton_1">Налаштування</button>
-        </div><br>
-        <button onclick="toggleTheme()" class="tema">Змінити тему</button>
     </div>
     <div class="window_akva">
         <!-- Остальне -->
@@ -83,7 +85,7 @@
         <div id="popup" class="popup">
             <div class="popup-content">
                 <div><br>
-                    <span style="margin-left: 48px; font-size: 36px;" >Кредити:</span> <button class="close" id="closeBtn">&times;</button>
+                    <span style="margin-left: 48px; font-size: 36px;" ><img src="image/kesh.png" alt="kesh" style="width: 50px; height: 50px;">Кредити:</span> <button class="close" id="closeBtn">&times;</button>
                 </div>
                 <div class="shop-adres"><br>
                     ______________________________________________________________________________________________________________________________
@@ -144,7 +146,7 @@
 
         var continueBtn = document.getElementById("continue");
             var menuContent = document.querySelector(".window_akva");
-            var electrocatsContent = document.querySelector(".h1");
+            var electrocatsContent = document.querySelector(".h2");
             var toggleBtn = document.getElementById("toggleMenu");
 
         continueBtn.addEventListener("click", function () {
