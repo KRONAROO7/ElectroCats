@@ -33,30 +33,43 @@
                 <!-- Вспливашки -->
                 <div id="myModal" class="modal">
                     <div class="modal-content">
-                        <span class="close-2" onclick="closeModal()">&times;</span>
+                        
                         <H1 style="text-align: center;">НАВЧАННЯ</H1>
-                        <div style="display: flex; align-items: center;">
+                        <div style="display: flex; align-items: center; flex-wrap: wrap;">
                             <div style="flex: 0 0 auto;">
                                 <img src="image/eat.png" alt="eat" style="width: 150px; height: 150px;">
                                 <img src="image/mitya.png" alt="mitya" style="width: 150px; height: 150px;">
                             </div>
-                            <div style="flex: 1;">
+                            <div style="flex: 5;">
                                 <span style="text-align: right;">Ви можете скористатися кнопкою «їжа»,
                                     аби порадувати мешканців акваріума смачним кормом. Також ви можете вимити акваріум
                                     з-за допомогою «губка», коли той забрудниться.</span>
                             </div>
-                            <div>
-                                <img src="image/setting.png" alt="eat" style="width: 150px; height: 150px;">
-                                <img src="image/exit.png" alt="eat" style="width: 150px; height: 150px;">
-                                <img src="image/shop.png" alt="eat" style="width: 150px; height: 150px;">
+                            <div style="flex: 0 auto;">
+                                <span style="text-align: right;">Ви завжди можете завітати в «магазин», аби придбати 
+                                    нових рибок, скористатися кнопкою «налаштування» для покращення
+                                ігрового процесу та «вийти з гри» для завершення.</span>
+                            </div>
+                            <div style="flex: 5;">
+                                <img src="image/setting.png" alt="setting" style="width: 150px; height: 150px;">
+                                <img src="image/exit.png" alt="exit" style="width: 150px; height: 150px;">
+                                <img src="image/shop.png" alt="shop" style="width: 150px; height: 150px;">
+                            </div>
+                            <div style="flex: 0 auto;">
+                                <span style="text-align: right;">Кредити вказують
+                                     на поточну кількість ваших грошей. Ви можете 
+                                     скористатися ними, щоб придбати нових рибок.</span>
+                            </div>
+                            <div style="flex: 5;">
+                                <img src="image/kesh.png" alt="kesh" style="width: 150px; height: 150px;">
                             </div>
                         </div>
-  
+                        <button class="close-2" onclick="closeModal()">ОК</button>    
                     </div>
                 </div>
 
                 <!-- Решта -->
-                <button class="button-left-3">%</button>
+                <button class="button-left-3" onclick="openModal()"></button>
                 <button class="button-right-3" id="toggleMenu"></button>
             </div>
 
@@ -109,12 +122,18 @@
         function openModalDelayed() {
                 setTimeout(function () {
                     document.getElementById("myModal").style.display = "block";
-                }, 5); // Затримка в 5000 мілісекунд (5 секунд)
+                }, 3000); 
+            }
+        function openModal() {
+                setTimeout(function () {
+                    document.getElementById("myModal").style.display = "block";
+                }, 1);
             }
 
-            function closeModal() {
-                document.getElementById("myModal").style.display = "none";
-            }
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
 
         // Меню ___________________________
 
