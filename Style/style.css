@@ -38,7 +38,14 @@ body{
     margin-top: 0%;
     
 }
+<<<<<<< HEAD
 .buton_1{
+=======
+
+.buton_1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+>>>>>>> f786385 (All)
     cursor: pointer;
     border: none;
     border-radius: 10px;
