@@ -12,6 +12,21 @@
 </head>
 
 <body>
+    <div id="popup1" class="popup1">
+        <div class="popup-content1"><br><br><br><br><br>           
+            <div class="popup1-l">
+                <label for="language-select">Select Language:</label>
+                <select id="language-select" onchange="changeLanguage()" class="lang">
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                    <option value="ua">Ukraine</option>
+                </select>
+            </div>
+            <div class="popup1-l"><button onclick="toggleTheme()" class="tema">Змінити тему</button></div>
+            <div class="popup1-l"><button class="close-1" id="closeBtn1">Вернутись на головне меню</button></div>
+        </div>
+    </div>
     <div class="h2">
         <div class="h1">
             <div >
@@ -20,9 +35,9 @@
             </div>
             <div >
                 <button id="continue" class="buton_1" onclick="openModalDelayed()">Розпочати гру</button><br>
-                <button class="buton_1">Налаштування</button>
+                <button class="buton_1" id="openBtn1">Налаштування</button>
             </div><br>
-            <button onclick="toggleTheme()" class="tema">Змінити тему</button>
+            
         </div>
     </div>
     <div class="window_akva">
@@ -31,7 +46,7 @@
             <button id="openBtn" class="buton_2-1"></button>
             <button class="buton_2-2"></button>
             <button class="buton_2-3"></button>
-            <button class="buton_2-4"></button>
+            <button class="buton_2-4" id="openBtn1"></button>
         </div>
         <div class="akva">
 
@@ -158,6 +173,33 @@
             menuContent.classList.toggle("show");
             electrocatsContent.classList.toggle("hide");
         });
+
+        // налаштування вид
+        var openBtn1 = document.getElementById("openBtn1");
+            var closeBtn1 = document.getElementById("closeBtn1");
+            var popup1 = document.getElementById("popup1");
+
+
+            openBtn1.addEventListener("click", function () {
+                popup1.style.display = "block";
+            });
+
+            closeBtn1.addEventListener("click", function () {
+                popup1.style.display = "none";
+            });
+
+            window.addEventListener("click", function (event) {
+                if (event.target == popup1) {
+                    popup1.style.display = "none";
+                }
+            });
+
+        // Налаштування
+        function changeLanguage() {
+                const select = document.getElementById('language-select');
+                const selectedLanguage = select.options[select.selectedIndex].text;
+                document.getElementById('selected-language').innerText = 'Selected Language: ' + selectedLanguage;
+            }
 
 
         // Магазин ______________________
