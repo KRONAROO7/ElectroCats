@@ -1,5 +1,8 @@
 import sqlite3
 import secrets
+import threading
+import schedule
+import time
 import pytz
 from datetime import datetime
 from config import fish_cost
@@ -28,6 +31,18 @@ class Database:
                 FOREIGN KEY (user_id) REFERENCES users(session_id)
         )""")
         conn.commit()
+        conn.close()
+
+        thr = threading.Thread(target=self.do_schedule, name="thr")
+        thr.start()
+
+    def do_schedule(self):
+        schedule.every(30).seconds.do(self.add_wash)
+        schedule.every(30).seconds.do(self.add_hungry)
+        schedule.every(30).seconds.do(self.kill_fish)
+        while True:
+            schedule.run_pending()
+            time.sleep(1)
 
     @staticmethod
     def add_fish(session_id, fish):
@@ -103,7 +118,7 @@ class Database:
         cursor = conn.cursor()
         hunger = cursor.execute("SELECT fish_id fish WHERE hunger > 100").fetchall()
         for fish in hunger:
-            cursor.execute("DELETE FROM fish WHERE fish_id = ?", fish)
+            cursor.execute("UPDATE fish SET is_alive = 0 WHERE fish_id = ?", fish)
         conn.commit()
         conn.close()
 
@@ -244,3 +259,4 @@ class Database:
         if fish_id is None:
             return None
         return True if is_alive == 1 else False
+
