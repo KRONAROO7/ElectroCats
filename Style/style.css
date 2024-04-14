@@ -59,9 +59,11 @@ body {
     font-size: 48px;
 }
 .tema{
-    width: 100px;
-    border-radius: 10px;
-    cursor: pointer;
+    text-align: center;
+        width: 250px;
+        height: 50px;
+        border-radius: 10px;
+        cursor: pointer;
 }
 
 /* __________________________Магазин______________________________ */
