@@ -31,7 +31,7 @@
         <div class="h1">
             <div >
                 <br><br><br><br><br><br><br><br><br><br><br><br>
-                <span class="name" >ElectroCats</span>
+                <span class="name" >Tamagotchi Aquarium</span>
             </div>
             <div >
                 <button id="continue" class="buton_1" onclick="openModalDelayed()">Розпочати гру</button><br>
@@ -55,20 +55,21 @@
                 <!-- Вспливашки -->
                 <div id="myModal" class="modal">
                     <div class="modal-content">
-
-                        <H1 style="text-align: center;">НАВЧАННЯ</H1>
+                        <div style=" margin: 0; height: 100px; width: 100%; border-bottom: 2px solid #000;">
+                            <H1 style="text-align: center; font-size: 36px;">НАВЧАННЯ</H1>
+                        </div>
                         <div style="display: flex; align-items: center; flex-wrap: wrap;">
                             <div style="flex: 0 0 auto;">
                                 <img src="image/eat.png" alt="eat" style="width: 150px; height: 150px;">
                                 <img src="image/mitya.png" alt="mitya" style="width: 150px; height: 150px;">
                             </div>
                             <div style="flex: 5;">
-                                <span style="text-align: right;">Ви можете скористатися кнопкою «їжа»,
+                                <span style="text-align: right; font-size: 28px;">Ви можете скористатися кнопкою «їжа»,
                                     аби порадувати мешканців акваріума смачним кормом. Також ви можете вимити акваріум
                                     з-за допомогою «губка», коли той забрудниться.</span>
                             </div>
                             <div style="flex: 0 auto;">
-                                <span style="text-align: right;">Ви завжди можете завітати в «магазин», аби придбати
+                                <span style="text-align: right; font-size: 28px;">Ви завжди можете завітати в «магазин», аби придбати
                                     нових рибок, скористатися кнопкою «налаштування» для покращення
                                     ігрового процесу та «вийти з гри» для завершення.</span>
                             </div>
@@ -78,7 +79,7 @@
                                 <img src="image/shop.png" alt="shop" style="width: 150px; height: 150px;">
                             </div>
                             <div style="flex: 0 auto;">
-                                <span style="text-align: right;">Кредити вказують
+                                <span style="text-align: right; font-size: 28px;">Кредити вказують
                                     на поточну кількість ваших грошей. Ви можете
                                     скористатися ними, щоб придбати нових рибок.</span>
                             </div>
@@ -100,32 +101,95 @@
         <div id="popup" class="popup">
             <div class="popup-content">
                 <div><br>
-                    <span style="margin-left: 48px; font-size: 36px;" ><img src="image/kesh.png" alt="kesh" style="width: 50px; height: 50px;">Кредити:</span> <button class="close" id="closeBtn">&times;</button>
+                    <span style="margin-left: 48px; font-size: 36px; color: #ffffff;" ><img src="image/kesh.png" alt="kesh" style="width: 50px; height: 50px; ">Кредити:</span> <button class="close" id="closeBtn">&times;</button>
                 </div>
                 <div class="shop-adres"><br>
-                    ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-1.png" alt="fish-1" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-1.png')">Купити Рибку</button><br>
-                    ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-2.png" alt="fish-2" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-2.png')">Купити Рибку</button><br>
-                    ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-3.png" alt="fish-3" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-3.png')">Купити Рибку</button><br>
-                    ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-4.png" alt="fish-4" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-4.png')">Купити Рибку</button><br>
-                    ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-5.png" alt="fish-5" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-5.png')">Купити Рибку</button><br>
-                    ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-6.png" alt="fish-6" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-6.png')">Купити Рибку</button><br>
-                    ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-7.png" alt="fish-7" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-7.png')">Купити Рибку</button><br>
-                    ______________________________________________________________________________________________________________________________
-                    <img src="image/fish-8.png" alt="fish-8" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/fish-8.png')">Купити Рибку</button><br>
-                    ______________________________________________________________________________________________________________________________
-                    <img src="image/kriv-1.png" alt="kriv-1" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/kriv-1.png')">Купити Криветку</button><br>
-                    ______________________________________________________________________________________________________________________________
-                    <img src="image/kriv-2.png" alt="kriv-2" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" onclick="createMovingImage('image/kriv-2.png')">Купити Криветку</button><br>
-                    ______________________________________________________________________________________________________________________________
-                    <img src="image/ravlik.png" alt="ravlik" class="image-shop"><button class="shop-buton-1">250</button><button class="shop-buton-2" style="margin-bottom: 100px;" onclick="createMovingImage('image/ravlik.png')">Купити Равлика</button>
-                    ______________________________________________________________________________________________________________________________
+                    ____________________________________________________________________________________________
+                    <div style="    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;"><div><img src="image/fish-1-1.png" alt="fish-1" class="image-shop"></div><div><button class="shop-buton-1">250</button></div><div><button class="shop-buton-2" onclick="createMovingImage('image/fish-1.png')">Купити Рибку</button></div></div><br>
+                    ____________________________________________________________________________________________
+                    <div style="    display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: space-evenly;">
+                        <div><img src="image/fish-2-1.png" alt="fish-1" class="image-shop"></div>
+                        <div><button class="shop-buton-1">250</button></div>
+                        <div><button class="shop-buton-2" onclick="createMovingImage('image/fish-2.png')">Купити Рибку</button></div>
+                    </div><br>____________________________________________________________________________________________
+                    <div style="    display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: space-evenly;">
+                        <div><img src="image/fish-3-1.png" alt="fish-1" class="image-shop"></div>
+                        <div><button class="shop-buton-1">250</button></div>
+                        <div><button class="shop-buton-2" onclick="createMovingImage('image/fish-3.png')">Купити Рибку</button></div>
+                    </div><br>____________________________________________________________________________________________
+                    <div style="    display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: space-evenly;">
+                        <div><img src="image/fish-4-1.png" alt="fish-1" class="image-shop"></div>
+                        <div><button class="shop-buton-1">250</button></div>
+                        <div><button class="shop-buton-2" onclick="createMovingImage('image/fish-4.png')">Купити Рибку</button></div>
+                    </div><br>____________________________________________________________________________________________
+                    <div style="    display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: space-evenly;">
+                        <div><img src="image/fish-5-1.png" alt="fish-1" class="image-shop"></div>
+                        <div><button class="shop-buton-1">250</button></div>
+                        <div><button class="shop-buton-2" onclick="createMovingImage('image/fish-5.png')">Купити Рибку</button></div>
+                    </div><br>____________________________________________________________________________________________
+                    <div style="    display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: space-evenly;">
+                        <div><img src="image/fish-6-1.png" alt="fish-1" class="image-shop"></div>
+                        <div><button class="shop-buton-1">250</button></div>
+                        <div><button class="shop-buton-2" onclick="createMovingImage('image/fish-6.png')">Купити Рибку</button></div>
+                    </div><br>____________________________________________________________________________________________
+                    <div style="    display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: space-evenly;">
+                        <div><img src="image/fish-7-1.png" alt="fish-1" class="image-shop"></div>
+                        <div><button class="shop-buton-1">250</button></div>
+                        <div><button class="shop-buton-2" onclick="createMovingImage('image/fish-7.png')">Купити Рибку</button></div>
+                    </div><br>____________________________________________________________________________________________
+                    <div style="    display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: space-evenly;">
+                        <div><img src="image/fish-8-1.png" alt="fish-1" class="image-shop"></div>
+                        <div><button class="shop-buton-1">250</button></div>
+                        <div><button class="shop-buton-2" onclick="createMovingImage('image/fish-8.png')">Купити Рибку</button></div>
+                    </div><br>____________________________________________________________________________________________
+                    <div style="    display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: space-evenly;">
+                        <div><img src="image/kriv-1-1.png" alt="fish-1" class="image-shop"></div>
+                        <div><button class="shop-buton-1">250</button></div>
+                        <div><button class="shop-buton-2" onclick="createMovingImage('image/kriv-1.png')">Купити Криветку</button></div>
+                    </div><br>____________________________________________________________________________________________
+                    <div style="    display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: space-evenly;">
+                        <div><img src="image/kriv-2-1.png" alt="fish-1" class="image-shop"></div>
+                        <div><button class="shop-buton-1">250</button></div>
+                        <div><button class="shop-buton-2" onclick="createMovingImage('image/kriv-2.png')">Купити Криветку</button></div>
+                    </div><br>____________________________________________________________________________________________
+                    <div style="    display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: space-evenly;">
+                        <div><img src="image/ravlik-1.png" alt="fish-1" class="image-shop"></div>
+                        <div><button class="shop-buton-1">250</button></div>
+                        <div><button class="shop-buton-2" onclick="createMovingImage('image/ravlik.png')">Купити Равлика</button></div>
+                    </div><br>
                 </div>
             </div>
         </div>
