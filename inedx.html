@@ -43,13 +43,79 @@
     <div class="window_akva">
         <!-- Остальне -->
         <div class="menu_akva">
-            <button id="openBtn" class="buton_2-1"></button>
-            <button class="buton_2-2"></button>
-            <button class="buton_2-3"></button>
-            <button class="buton_2-4" id="openBtn1"></button>
+            <button id="openBtn" onclick="showWarning()" class="buton_2-1"></button>
+            <button class="buton_2-2" onclick="showUvag1()"></button>
+            <button class="buton_2-3" onclick="showWarning4()"></button>
+            <button class="buton_2-4"  onclick="showWarning6()"></button>
         </div>
         <div class="akva">
-
+            <div class="container-123" id="warning">
+                <div class="warning" >
+                    <div style="border-bottom: 2px solid black; font-size: 24px;"> ПОПЕРЕДЖЕННЯ!</div>
+                <div style="font-size: 19px;">Мешканці вашого акваріум голодні. Сипте їм корму</div>
+                    <button class="shop-buton-2" onclick="hideWarning()">ДОБРЕ</button><br>
+                    <button class="shop-buton-2" onclick="showWarning_2()">ПОГУДУВАТИ</button>
+                </div>
+            </div>
+            <div class="container-123"  id="warning_2">
+                <div class="warning">
+                    <div style="border-bottom: 2px solid black; font-size: 24px;"> УВАГА!</div>
+                    <div style="font-size: 19px;">Ви успішно покормили рибок!</div>
+                    <button class="shop-buton-2" onclick="hideWarning_2()">ДОБРЕ</button>
+                </div>
+            </div>
+            <div class="container-123" id="Uvag">
+                <div class="warning">
+                    <div style="border-bottom: 2px solid black; font-size: 24px;"> УВАГА!</div>
+                    <div style="font-size: 19px;">Одна з ваших рибок може померти. Будьте уважні!</div>
+                    <button class="shop-buton-2" onclick="hideUvag()">ДОБРЕ</button>
+                </div>
+            </div>
+            <div class="container-123" id="Uvag1">
+                <div class="warning">
+                    <div style="border-bottom: 2px solid black; font-size: 24px;"> ПОПЕРЕДЖЕННЯ!</div>
+                    <div style="font-size: 19px;">Акваріум брудний. Потрібно почистити!!</div>
+                    <button class="shop-buton-2" onclick="hideUvag1()">ДОБРЕ</button><br>
+                    <button class="shop-buton-2" onclick="showWarning3()">ПОЧИСТИТИ</button>
+                </div>
+            </div>
+            <div class="container-123" id="warning3">
+                <div class="warning">
+                    <div style="border-bottom: 2px solid black; font-size: 24px;"> УВАГА!</div>
+                    <div style="font-size: 19px;">Ви почистили акваріум!</div>
+                    <button class="shop-buton-2" onclick="hideWarning3()">ДОБРЕ</button>
+                </div>
+            </div>
+            <div class="container-123" id="warning4">
+                <div class="warning">
+                    <div style="border-bottom: 2px solid black; font-size: 24px;"> УВАГА!</div>
+                    <div style="font-size: 19px;">Мешканці акваріума готові до розмноження. Дозвольте їм продовжити свій рід!</div>
+                    <button class="shop-buton-2" onclick="hideWarning4()">ДОБРЕ</button>
+                    <button class="shop-buton-2" onclick="showWarning5()">ПРОДОВЖИТИ</button>
+                </div>
+            </div>
+            <div class="container-123" id="warning5">
+                <div class="warning">
+                    <div style="border-bottom: 2px solid black; font-size: 24px;"> УВАГА!</div>
+                    <div style="font-size: 19px;">Ваші рибки успішно розмножились. Приймайте потомство!</div>
+                    <button class="shop-buton-2" onclick="hideWarning5()">ДОБРЕ</button>
+                </div>
+            </div>
+            <div class="container-123" id="warning6">
+                <div class="warning">
+                    <div style="border-bottom: 2px solid black; font-size: 24px;"> УВАГА!</div>
+                    <div style="font-size: 19px;">Ви можете продати одного з мешканців вашого акваріума.</div>
+                    <button class="shop-buton-2" onclick="hideWarning6()">ДОБРЕ</button>
+                    <button class="shop-buton-2" onclick="showWarning7()">ПРОДАТИ</button>
+                </div>
+            </div>
+            <div class="container-123" id="warning7">
+                <div class="warning">
+                    <div style="border-bottom: 2px solid black; font-size: 24px;"> УВАГА!</div>
+                    <div style="font-size: 19px;">Ви продали мешканця!</div>
+                    <button class="shop-buton-2" onclick="hideWarning7()">ДОБРЕ</button>
+                </div>
+            </div>
             <div id="container">
 
                 <!-- Вспливашки -->
@@ -101,7 +167,7 @@
         <div id="popup" class="popup">
             <div class="popup-content">
                 <div><br>
-                    <span style="margin-left: 48px; font-size: 36px; color: #ffffff;" ><img src="image/kesh.png" alt="kesh" style="width: 50px; height: 50px; ">Кредити:</span> <button class="close" id="closeBtn">&times;</button>
+                    <span style="margin-left: 48px; font-size: 36px; color: #ffffff;" ><img src="image/kesh.png" alt="kesh" style="width: 50px; height: 50px; ">Кредити:</span> <button class="close" onclick="showUvag()" id="closeBtn">&times;</button>
                 </div>
                 <div class="shop-adres"><br>
                     ____________________________________________________________________________________________
@@ -197,6 +263,98 @@
     </div>
 
     <script>
+        // Попередження
+        function showUvag() {
+                setTimeout(function () {
+                    document.getElementById("Uvag").style.display = "block";
+                }, 20000);
+            }
+
+            function hideUvag() {
+                document.getElementById("Uvag").style.display = "none";
+            }
+            // _________________________
+                function showWarning7() {
+                    setTimeout(function () {
+                        document.getElementById("warning7").style.display = "block";
+                    }, 2);
+                }
+
+                function hideWarning7() {
+                    document.getElementById("warning7").style.display = "none";
+                }
+            // _________________________
+                function showWarning6() {
+                    setTimeout(function () {
+                        document.getElementById("warning6").style.display = "block";
+                    }, 25000);
+                }
+
+                function hideWarning6() {
+                    document.getElementById("warning6").style.display = "none";
+                }
+            // _________________________
+            function showWarning5() {
+                    setTimeout(function () {
+                        document.getElementById("warning5").style.display = "block";
+                    }, 2);
+                }
+
+                function hideWarning5() {
+                    document.getElementById("warning5").style.display = "none";
+                }
+            // _________________________
+            function showWarning4() {
+                    setTimeout(function () {
+                        document.getElementById("warning4").style.display = "block";
+                    }, 20000);
+                }
+
+                function hideWarning4() {
+                    document.getElementById("warning4").style.display = "none";
+                }
+            // ______________________
+            function showWarning3() {
+                    setTimeout(function () {
+                        document.getElementById("warning3").style.display = "block";
+                    }, 2);
+                }
+
+                function hideWarning3() {
+                    document.getElementById("warning3").style.display = "none";
+                }
+            // _____________________
+            function showUvag1() {
+                    setTimeout(function () {
+                        document.getElementById("Uvag1").style.display = "block";
+                    }, 20000);
+                }
+
+                function hideUvag1() {
+                    document.getElementById("Uvag1").style.display = "none";
+                }
+            // _________________
+        function showWarning() {
+                setTimeout(function () {
+                    document.getElementById("warning").style.display = "block";
+                }, 20000);
+            }
+
+            function hideWarning() {
+                document.getElementById("warning").style.display = "none";
+            }
+            // _______________
+        function showWarning_2() {
+            setTimeout(function () {
+                document.getElementById("warning_2").style.display = "block";
+            }, 2);
+        }
+
+        function hideWarning_2() {
+            document.getElementById("warning_2").style.display = "none";
+        }
+
+
         // Тема
         function toggleTheme() {
             var body = document.body;
